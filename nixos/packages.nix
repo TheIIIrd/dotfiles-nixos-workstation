@@ -4,8 +4,6 @@
     allowUnfree = true;
   };
 
-  programs.firefox.enable = true;
-
   environment.systemPackages = with pkgs; [
     # Desktop applications
     blackbox-terminal

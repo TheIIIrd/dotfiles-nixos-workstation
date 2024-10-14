@@ -19,5 +19,6 @@
     ./steam.nix       # Steam configuration
     ./tlp.nix         # TLP (Laptop Mode Tools) configuration
     ./flatpak.nix     # Flatpak configuration
+    ./firefox.nix     # Firefox configuration
   ];
 }
