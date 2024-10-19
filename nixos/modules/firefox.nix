@@ -10,7 +10,7 @@
       DisableSetDesktopBackground = true;
       DisableTelemetry = true;
       HardwareAcceleration = true;
-      HttpsOnlyMode = enabled;
+      HttpsOnlyMode = true;
 
       Permissions = {
         Camera = {
