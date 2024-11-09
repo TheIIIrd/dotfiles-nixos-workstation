@@ -9,7 +9,7 @@
     alsa.support32Bit = true; # 32-bit apps support
     pulse.enable = true;      # PulseAudio support
 
-    # Uncomment for JACK
+    # JACK support
     jack.enable = true;
   };
 }

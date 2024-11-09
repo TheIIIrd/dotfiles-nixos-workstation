@@ -14,7 +14,7 @@
         obsidian
         r2modman
         vesktop
-        ];
+      ];
     };
   };
 }

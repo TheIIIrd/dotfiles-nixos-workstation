@@ -1,6 +1,6 @@
 {
   services.zerotierone = {
     enable = true;
-    joinNetworks = [];
+    joinNetworks = [];  # Don't forget to add the nwid
   };
 }

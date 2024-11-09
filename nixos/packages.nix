@@ -35,6 +35,7 @@
     # Development tools
     android-tools
     python312
+    python312Packages.black
     python312Packages.pip
     clang
     clang-tools
@@ -81,6 +82,7 @@
 
   # Font packages
   fonts.packages = with pkgs; [
+    corefonts
     jetbrains-mono
     meslo-lgs-nf
   ];
