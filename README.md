@@ -16,3 +16,15 @@ git add .
 sudo nixos-rebuild boot --upgrade --flake .
 home-manager switch -b backup --flake .
 ```
+
+## After installation
+```bash
+flatpak remotes --show-details
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+```bash
+flatpak search org.gtk.Gtk3theme.adw-gtk3
+flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+flatpak install flathub com.github.tchx84.Flatseal page.codeberg.libre_menu_editor.LibreMenuEditor com.heroicgameslauncher.hgl
+```
