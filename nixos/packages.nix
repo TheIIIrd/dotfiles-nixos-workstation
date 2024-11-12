@@ -6,7 +6,7 @@
 
   environment.systemPackages = with pkgs; [
     # Desktop applications
-    blackbox-terminal
+    ptyxis
     clapper
     easyeffects
     fragments
