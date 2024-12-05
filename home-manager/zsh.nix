@@ -11,7 +11,6 @@
       rb       = "sudo nixos-rebuild switch --flake ${flakeDir}";
       upd      = "sudo nix flake update ${flakeDir}";
       upg      = "sudo nixos-rebuild boot --upgrade --flake ${flakeDir}";
-      sysupg   = "sudo nixos-rebuild boot --recreate-lock-file --flake ${flakeDir}";
       hms      = "home-manager switch -b backup --flake ${flakeDir}";
 
       conf     = "nvim ${flakeDir}/nixos/configuration.nix";

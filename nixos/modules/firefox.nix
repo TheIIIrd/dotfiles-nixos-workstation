@@ -35,7 +35,7 @@
       };
 
       PromptForDownloadLocation = true;
-      # TranslateEnabled = false;
+      TranslateEnabled = false;
     };
   };
 }

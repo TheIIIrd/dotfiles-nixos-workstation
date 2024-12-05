@@ -8,10 +8,10 @@
     # Desktop applications
     ptyxis
     clapper
+    dconf-editor
     easyeffects
     fragments
-    gnome.dconf-editor
-    gnome.gnome-tweaks
+    gnome-tweaks
     inkscape
     kdenlive
     krita
@@ -37,6 +37,7 @@
     python312
     python312Packages.black
     python312Packages.pip
+    radare2
     clang
     clang-tools
     gcc
@@ -62,8 +63,6 @@
     lshw
     neovim
     openssl
-    onefetch
-    radare2
     tree
     tldr
     unzip
