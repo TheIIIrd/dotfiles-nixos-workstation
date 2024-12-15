@@ -2,18 +2,15 @@
 
 Welcome to my redesigned NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.
 
-![screenshot](./screenshots/screenshot1.png)
+![screenshot](./screenshots/gnome1.png)
 
-You can still find my old configuration [here](https://github.com/Andrey0189/nixos-config)
+You can still find Andrey0189's old configuration [here](https://github.com/Andrey0189/nixos-config)
 
 ## ✨ Features
 
 - 🖥️ **Multiple Hosts Support**: Easy to configure for different hosts.
-- 🎨 **Gruvbox Theme**: A perfect blend of vibrant and subtle colors.
-- 🪟 **Hyprland + Waybar**: 10/10 window compositor on Wayland.
 - 🏠 **Home Manager Integration**: lots of stuff configured.
-- 🧇 **Tmux**: with my own hotkeys.
-- 🌟 **Zsh + starship**: Efficient shell setup with lots of aliases.
+- 🌟 **Zsh**: Efficient shell setup with lots of aliases.
 
 ## 🚀 Installation
 
@@ -85,14 +82,14 @@ To get started with this setup, follow these steps:
 
     ```bash
     cd ~/.nix
-    nixos-rebuild switch --flake ./#<hostname>
-    # or nixos-install --flake ./#<hostname> if you are installing on a fresh system
+    nixos-rebuild switch --flake ./#<your_hostname>
+    # or nixos-install --flake ./#<your_hostname> if you are installing on a fresh system
     home-manager switch
     ```
 
 ## 😎 Enjoy!
 
-![screenshot](./screenshots/screenshot2.png)
+![screenshot](./screenshots/gnome2.png)
 
 ## 🤝 Contributions
 
