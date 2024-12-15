@@ -19,7 +19,7 @@ To get started with this setup, follow these steps:
 1. **Install NixOS**: If you haven't already installed NixOS, follow the [NixOS Installation Guide](https://nixos.org/manual/nixos/stable/#sec-installation) for detailed instructions.
 2. **Clone the Repository**:
 
-	```bash
+    ```bash
     git clone https://github.com/TheIIIrd/dotfiles-nixos-workstation ~/.nix && cd ~/.nix
     ```
 

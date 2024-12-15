@@ -19,7 +19,7 @@
     #};
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "amper";
