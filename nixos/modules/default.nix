@@ -7,6 +7,7 @@
     ./flatpak.nix
     ./gnome-exclude.nix
     ./home-manager.nix
+    ./locale.nix
     ./mime.nix
     ./net.nix
     ./nh.nix
