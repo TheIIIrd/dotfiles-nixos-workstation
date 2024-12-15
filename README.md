@@ -37,7 +37,7 @@ To get started with this setup, follow these steps:
 4. **Put your `hardware-configuration.nix` file there**:
 
     ```bash
-    cp --no-preserve=mode /etc/nixos/hardware-configuration.nix ~/.nix/nixos/
+    cp --no-preserve=mode /etc/nixos/hardware-configuration.nix ~/.nix/hosts/<your_hostname>/
     ```
 
 5. **Edit `hosts/<your_hostname>/local-packages.nix` and `nixos/packages.nix` files if needed**:
@@ -48,6 +48,14 @@ To get started with this setup, follow these steps:
     ```
 
 6. **Finally, edit the `flake.nix` file**:
+
+    ```sh
+    sed -i -e 's/amper/<your_hostname>/g' \
+       -e '/{ hostname = "330-15ARR"; stateVersion = "24.11"; }/d' \
+       -e 's/hostname = "slim3"/hostname = "<your_hostname>"/' \
+       -e 's/stateVersion = "24.05"/stateVersion = "<your_state_version>"/' \
+       ~/.nix/flake.nix
+    ```
 
     ```diff
     ...
@@ -68,7 +76,7 @@ To get started with this setup, follow these steps:
 7. **Rebuilding**:
 
     ```bash
-    cd nixos-config-reborn
+    cd ~/.nix
     nixos-rebuild switch --flake ./#<hostname>
     # or nixos-install --flake ./#<hostname> if you are installing on a fresh system
     home-manager switch
