@@ -47,13 +47,20 @@ To get started with this setup, follow these steps:
     vim ../../nixos/packages.nix
     ```
 
-6. **Finally, edit the `flake.nix` file**:
+6. **Edit `home-manager/modules/git.nix` git.nix**
+
+    ```bash
+    vim ../../home-manager/modules/git.nix
+    ```
+
+7. **Finally, edit the `flake.nix` file**:
 
     ```sh
     sed -i -e 's/amper/<your_hostname>/g' \
        -e '/{ hostname = "330-15ARR"; stateVersion = "24.11"; }/d' \
        -e 's/hostname = "slim3"/hostname = "<your_hostname>"/' \
        -e 's/stateVersion = "24.05"/stateVersion = "<your_state_version>"/' \
+       -e 's/homeStateVersion = "24.11";/homeStateVersion = "<your_home_manager_state_version>";/' \
        ~/.nix/flake.nix
     ```
 
@@ -73,7 +80,7 @@ To get started with this setup, follow these steps:
     ...
     ```
 
-7. **Rebuilding**:
+8. **Rebuilding**:
 
     ```bash
     cd ~/.nix

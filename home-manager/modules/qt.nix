@@ -1,8 +1,8 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    papirus-icon-theme
-    pcmanfm-qt
+    tela-circle-icon-theme
   ];
+
   qt = {
     enable = true;
     platformTheme.name = "gtk";
