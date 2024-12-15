@@ -14,15 +14,15 @@
     ./nix.nix
     ./nvidia.nix
     ./printing.nix
-    ./qemu-guest.nix
+    # ./qemu-guest.nix
     ./steam.nix
     ./timezone.nix
-    ./tlp.nix
+    # ./tlp.nix
     ./trim.nix
     ./user.nix
     ./virt-manager.nix
     ./xserver.nix
-    ./yggdrasil.nix
+    # ./yggdrasil.nix
     ./zerotierone.nix
     ./zram.nix
   ];
