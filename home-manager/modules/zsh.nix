@@ -7,15 +7,15 @@
 
     shellAliases =
       let
-        flakeDir = "~/flake";
+        flakeDir = "~/.nix";
       in {
         nh-sw = "nh os switch";
         nh-upd = "nh os switch --update";
         nh-hms = "nh home switch";
 
-        # nix-rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
-        # nix-upd = "nix flake update --flake ${flakeDir}";
-        # nix-upg = "sudo nixos-rebuild boot --upgrade --flake ${flakeDir}";
+        nix-rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
+        nix-upd = "nix flake update --flake ${flakeDir}";
+        nix-upg = "sudo nixos-rebuild boot --upgrade --flake ${flakeDir}";
 
         pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
