@@ -5,60 +5,80 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    alacritty
-    blueman
-    chromium
-    fuzzel
-    imv
-    mpv
+    clapper
+    dconf-editor
+    easyeffects
+    fragments
+    gparted
+    gnome-tweaks
+    inkscape
+    kdenlive
+    krita
+    mission-center
     obs-studio
-    obsidian
-    teams-for-linux
-    telegram-desktop
-    vesktop
-    wofi
+    onlyoffice-bin_latest
+    protonplus
+    protontricks
+    ptyxis
+    tenacity
+    tor-browser
+    ungoggled-chromium
+    vscodium
 
     # CLI utils
-    bottom
-    brightnessctl
-    cliphist
+    aria2
+    bat
+    bind
+    curl
+    fastfetch
     ffmpeg
+    file
     git
     git-graph
-    grimblast
     htop
+    ipset
     lazygit
-    lf
-    microfetch
+    lshw
+    nmap
     neovim
-    playerctl
     ranger
     ripgrep
-    showmethekey
     silicon
-    starship
-    swww
-    tmux
+    tldr
     tree
     unzip
-    vim
     wget
-    wl-clipboard
-    wtype
-    yt-dlp
     zip
 
     # Coding stuff
-    nodejs
-    python311
+    android-tools
+    cargo
+    clang
+    clang-tools
+    dotnet-sdk_8
+    gcc
+    gnumake
+    meson
+    mono
+    python312
+    python312Packages.black
+    python312Packages.matplotlib
+    python312Packages.numpy
+    python312Packages.pip
+    radare2
+    rustc
+    zulu
 
-    # WM stuff
-    hyprpicker
-    libsForQt5.xwaylandvideobridge
-    libnotify
-    waybar
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
+    # Extensions
+    gnomeExtensions.appindicator
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.caffeine
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.just-perfection
+
+    # Customization
+    adw-gtk3
+    tela-circle-icon-theme
 
     # Other
     bemoji
@@ -66,13 +86,15 @@
   ];
 
   fonts.packages = with pkgs; [
+    corefonts
+    font-awesome
     jetbrains-mono
+    meslo-lgs-nf
     noto-fonts
     noto-fonts-emoji
-    twemoji-color-font
-    font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    twemoji-color-font
+    # (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }

@@ -38,6 +38,7 @@ To get started with this setup, follow these steps:
 
     ```bash
     cp --no-preserve=mode /etc/nixos/hardware-configuration.nix ~/.nix/hosts/<your_hostname>/
+    cp --no-preserve=mode /etc/nixos/hardware-configuration.nix ~/.nix/nixos/
     ```
 
 5. **Edit `hosts/<your_hostname>/local-packages.nix` and `nixos/packages.nix` files if needed**:
