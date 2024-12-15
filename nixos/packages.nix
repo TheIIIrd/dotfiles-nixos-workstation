@@ -22,7 +22,7 @@
     ptyxis
     tenacity
     tor-browser
-    ungoggled-chromium
+    ungoogled-chromium
     vscodium
 
     # CLI utils
