@@ -5,11 +5,9 @@
     defaultUserShell = pkgs.zsh;
     users.${user} = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
       packages = with pkgs; [
       ];
     };
   };
-
-  services.getty.autologinUser = user;
 }
