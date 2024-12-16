@@ -87,6 +87,16 @@ To get started with this setup, follow these steps:
     home-manager switch
     ```
 
+9. **Flatpak customization**
+
+    ```bash
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    ```
+
+    ```bash
+    flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.github.tchx84.Flatseal
+    ```
+
 ## 😎 Enjoy!
 
 ![screenshot](./screenshots/gnome2.png)
